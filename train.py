@@ -100,7 +100,7 @@ def analyze_data_and_train_model(folder_path, data_yaml, epochs=300, batch_size=
         lrf=0.01,
         amp=True,
         augment=True,  # 启用数据增强
-        flipud=0.2,
+        flipud=0.2,  # 例如，垂直翻转的概率
         fliplr=0.3,  # 水平翻转的概率
         mosaic=1.0,  # 使用马赛克数据增强
         mixup=0.3
@@ -115,6 +115,6 @@ def analyze_data_and_train_model(folder_path, data_yaml, epochs=300, batch_size=
 
 
 if __name__ == '__main__':
-    folder_path = 'D:\\AI_Model\\yolov\\Dark_Line_Detector_yolov8\\data\\json_file'
-    data_yaml = 'dataset.yaml'
+    folder_path = 'D:\\AI_Model\\yolov\\Dark_Line_Detector_yolov8\\data\\json_file'  # 替换为你的文件夹路径
+    data_yaml = 'dataset.yaml'  # 替换为你的数据集yaml文件路径
     analyze_data_and_train_model(folder_path, data_yaml)
