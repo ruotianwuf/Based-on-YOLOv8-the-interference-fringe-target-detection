@@ -1,0 +1,7 @@
+path: D:/AI_Model/yolov/Dark_Line_Detector_yolov8/dataset  # 数据集的根路径
+train: images/train  # 训练集图像的相对路径
+val: images/val  # 验证集图像的相对路径
+
+nc: 1  # 类别数量
+names: ['dark']  # 类别名称
+
